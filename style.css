@@ -28,7 +28,7 @@
 
 #right {
     height: 100vh;
-    width: 51vw;
+    width: 55vw;
     background-color: darkgrey;
     z-index: 2;
 }
@@ -58,7 +58,7 @@
 }
 
 .animateleft{
-    animation: doorleft 1s ease-in-out  alternate ;
+    animation: doorleft 2.25s ease-in-out alternate ;
     transform-origin: top;
     transform-box: fill-box;
 }
@@ -76,13 +76,13 @@
 #doorright {
     height: 70vh;
     position: fixed;
-    left: 48.25%;
+    left: 47.70%;
     top: 18.5%;
     z-index: 1;
 }
 
 .animateright{
-    animation: doorright 1s ease-in-out  alternate ;
+    animation: doorright 2.25s ease-in-out alternate ;
     transform-origin: top;
     transform-box: fill-box;
 }

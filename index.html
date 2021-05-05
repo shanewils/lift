@@ -21,20 +21,20 @@
                 <img src="./images/door right.png" id="doorright">
             </div>
             <div id="right">
-                <button onclick="doorOpenRight(); doorOpenLeft()" >up</button>
+                <button onclick="openDoor()" >up</button>
             </div>
         </div>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <div>
                     <h2>Dentistry</h2>
-                    <div class="floor" id="6f"><a href="#">6F - Orthodontic therapist</a></div>
-                    <div class="floor" id="5f"><a href="#"> 5F - Clinical dental technician</a></div>
-                    <div class="floor" id="4f"><a href="#">4F - Dental technologist</a> </div>
-                    <div class="floor" id="3f"><a href="#"> 3F - Dental therapy & hygiene</a></div>
-                    <div class="floor" id="2f"><a href="#">2F - Dental nurse</a> </div>
-                    <div class="floor" id="1f"><a href="#"> 1F - Dentist</a></div>
-                    <div class="floor" id="G"><p>G - Reception</p></div>
+                    <div class="floor" id="6f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './6f.html' },9500);">6F - Orthodontic therapist</a></div>
+                    <div class="floor" id="5f" onclick="move()"><a href="#"> 5F - Clinical dental technician</a></div>
+                    <div class="floor" id="4f" onclick="move()"><a href="#">4F - Dental technologist</a> </div>
+                    <div class="floor" id="3f" onclick="move()"><a href="#"> 3F - Dental therapy & hygiene</a></div>
+                    <div class="floor" id="2f" onclick="move()"><a href="#">2F - Dental nurse</a> </div>
+                    <div class="floor" id="1f" onclick="move()"><a href="#"> 1F - Dentist</a></div>
+                    <div class="floor" id="G" onclick="doorCloseG()"><p>G - Reception</p></div>
                 </div>
             </div>
         </div>
