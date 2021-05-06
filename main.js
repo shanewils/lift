@@ -46,7 +46,7 @@ function openDoor(){
     setTimeout(() => { showModal(); }, 3000);
 }
 
-function openDoor2(){
+function arrive(){
     playDoor();
     doorOpenLeft();
     doorOpenRight();
@@ -78,7 +78,7 @@ function liftMove() {
     var ping = new Audio('./sounds/zapsplat_vehicles_aircraft_call_bell_single_tone_44563.mp3')
     move.play();
     setTimeout(() => { ping.play(); }, 6000);
-    setTimeout(() => { openDoor2(); }, 7000);
+    setTimeout(() => { arrive(); }, 7000);
     
 }
 
