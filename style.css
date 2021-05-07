@@ -73,6 +73,36 @@
     }
 }
 
+.animateleftclose{
+    animation: doorleftclose 2.25s ease-in-out alternate ;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes doorleftclose {
+    from{
+        transform: translatex(-100%);
+    }
+    to{
+        transform: translatex(0%);
+    }
+}
+
+.animaterightclose{
+    animation: doorrightclose 2.25s ease-in-out alternate ;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes doorrightclose {
+    from{
+        transform: translatex(0%);
+    }
+    to{
+        transform: translatex(100%);
+    }
+}
+
 #doorright {
     height: 70vh;
     position: fixed;
@@ -100,32 +130,49 @@
     }
 }
 
-button {
+.buttonbox {
     height: 100px;
     width: 50px;
     position: fixed;
     left: 65%;
     top: 40%;
     background-color: silver;
+    box-shadow: 2px 2px gray;
+}
+
+.button {
+    height: 20px;
+    width: 20px;
+    border: 1px aquamarine solid;
+    border-radius: 50%;
+    background-color: #888;
+    z-index: 2;
+    position: fixed;
+    left: 65.77%;
+    top: 44.5%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: lightgray;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
   }
   
-  /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #888;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -141,14 +188,12 @@ button {
     border: #888 solid 1px;
     height: 100px; 
     color: #888;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-right: 40px;
   }
 
-  .floor :hover{
-      background-color: aquamarine;
-      color: darkslategrey;
-  }
-
-  .floor a, p, h2 {
+  .floor p, h2 {
     text-decoration: none;
     color: #888;
     height: 100%;
@@ -156,4 +201,43 @@ button {
     text-align: center;
     font-size: 40px;
     padding: 20px;
+    background-color: #fefefe;
+  }
+
+  .modal-container {
+      height: 90%;
+      width: 100%;
+      border: #888 2px solid;
+      background-color: silver;
+  }
+
+  .floorbutton {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-color: silver;
+      border: 2px #888 solid;
+  }
+
+  .buttonrim {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: #888 solid 2px;
+    cursor: pointer;
+    box-shadow: 3px 3px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+  }
+
+  .buttonrim:hover{
+    background-color: aquamarine;
+}
+
+  .buttoncontainer {
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
   }

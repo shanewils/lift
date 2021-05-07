@@ -29,7 +29,6 @@ function doorOpenLeft() {
     var elementL = document.getElementById("doorleft");
     elementL.classList.add("animateleft");
     setTimeout(() => { elementL.classList.add("hide"); }, 2250);
-   
   }
 
 function doorOpenRight() {
@@ -56,6 +55,7 @@ function doorCloseLeft() {
     var elementCL = document.getElementById("doorleft");
     setTimeout(() => { elementCL.classList.remove("hide"); }, 1500);
     elementCL.classList.remove("animateleft");
+
     setTimeout(() => { modal.style.display = "none"; }, 200);
 }
 
@@ -78,8 +78,7 @@ function liftMove() {
     var ping = new Audio('./sounds/zapsplat_vehicles_aircraft_call_bell_single_tone_44563.mp3')
     move.play();
     setTimeout(() => { ping.play(); }, 6000);
-    setTimeout(() => { arrive(); }, 7000);
-    
+    setTimeout(() => { arrive(); }, 7000); 
 }
 
 function move() {
@@ -88,6 +87,7 @@ function move() {
 }
 
 function doorCloseG() {
+    playBeep();
     doorCloseRight(); 
     doorCloseLeft();
     playDoor();

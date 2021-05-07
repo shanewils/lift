@@ -21,20 +21,59 @@
                 <img src="./images/door right.png" id="doorright">
             </div>
             <div id="right">
-                <button onclick="openDoor()" >up</button>
+                <div class="buttonbox">
+                    <div class="button" onclick="openDoor()" ></div>
+                </div>
             </div>
         </div>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <div>
-                    <h2>Dentistry</h2>
-                    <div class="floor" id="6f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './6f.html' },9500);">6F - Orthodontic therapist</a></div>
-                    <div class="floor" id="5f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './5f.html' },9500);"> 5F - Clinical dental technician</a></div>
-                    <div class="floor" id="4f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './4f.html' },9500);">4F - Dental technologist</a> </div>
-                    <div class="floor" id="3f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './3f.html' },9500);"> 3F - Dental therapy & hygiene</a></div>
-                    <div class="floor" id="2f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './2f.html' },9500);">2F - Dental nurse</a> </div>
-                    <div class="floor" id="1f" onclick="move()"><a href="javascript:setTimeout(()=>{window.location = './1f.html' },9500);"> 1F - Dentist</a></div>
-                    <div class="floor" id="G" onclick="doorCloseG()"><p>G - Reception</p></div>
+                    <div class="modal-container">
+                        <h2>Dentistry</h2>
+                        <div class="buttoncontainer">
+                            <div class="floor"><p>6F - Orthodontic therapist</p></div>
+                            <div class="buttonrim">
+                                <a href="javascript:setTimeout(()=>{window.location = './6f.html' },9500);"><div class="floorbutton" id="6f" onclick="move()"></div></a>
+                            </div>
+                            </div>
+                        <div class="buttoncontainer">
+                            <div class="floor"><p>5F - Clinical dental technician</p></div>
+                            <div class="buttonrim">
+                                <a href="javascript:setTimeout(()=>{window.location = './5f.html' },9500);"><div class="floorbutton" id="5f" onclick="move()"></div></a>
+                            </div>
+                            </div>
+                        <div class="buttoncontainer">
+                            <div class="floor"><p>4F - Dental technologist</p></div>
+                            <div class="buttonrim">
+                                <a href="javascript:setTimeout(()=>{window.location = './4f.html' },9500);"><div class="floorbutton" id="4f" onclick="move()"></div></a>
+                            </div>
+                            </div>
+                        <div class="buttoncontainer">
+                            <div class="floor"><p>3F - Dental therapy & hygiene</p></div>
+                            <div class="buttonrim">
+                                <a href="javascript:setTimeout(()=>{window.location = './3f.html' },9500);"><div class="floorbutton" id="3f" onclick="move()"></div></a>
+                            </div>
+                            </div>
+                        <div class="buttoncontainer">
+                            <div class="floor"><p>2F - Dental nurse</p></div>
+                            <div class="buttonrim">
+                                <a href="javascript:setTimeout(()=>{window.location = './2f.html' },9500);"><div class="floorbutton" id="2f" onclick="move()"></div></a>
+                            </div>
+                            </div>
+                        <div class="buttoncontainer">    
+                            <div class="floor"><p>1F - Dentist</p></div>
+                            <div class="buttonrim">
+                                <a href="javascript:setTimeout(()=>{window.location = './1f.html' },9500);"><div class="floorbutton" id="1f" onclick="move()"></div></a>
+                            </div>
+                            </div>
+                        <div class="buttoncontainer"> 
+                            <div class="floor"><p>G - Reception</p></div>
+                            <div class="buttonrim">
+                                <div class="floorbutton" id="G" onclick="doorCloseG()"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
